@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ENV brew_packages "tfenv tgenv starship pkenv"
+ENV brew_packages "tfenv tgenv starship pkenv pre-commit terraform-docs"
 ENV terraform_version "1.3.9"
 ENV terragrunt_version "0.43.2"
 ENV packer_version "1.8.3"
