@@ -1,0 +1,6 @@
+// https: //iamroot.it/2022/03/21/how-to-create-a-devcontainer-for-vscode-to-run-ansible-terraform-packer-and-azure-cli-in-windows/
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
