@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-ENV brew_packages "tfenv tgenv starship pkenv pre-commit terraform-docs"
+ENV brew_packages "ansible font-hack-nerd-font tfenv tgenv starship pkenv pre-commit terraform-docs "
 ENV terraform_version "1.3.9"
 ENV terragrunt_version "0.43.2"
 ENV packer_version "1.8.3"
@@ -17,6 +17,7 @@ ENV MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
 ENV INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 
 # Install brew packages
+RUN brew tap homebrew/cask-fonts
 RUN brew tap kwilczynski/homebrew-pkenv
 RUN brew install ${brew_packages}
 
